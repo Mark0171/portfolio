@@ -1,0 +1,598 @@
+:root{
+    /* --first-color: #1E2749; */
+    --first-color: #16171d;
+    --second-color: #FFC8FB;
+    --third-color: hsl(0, 0%, 90%);
+    --fourth-color: hsl(227, 100%, 5%);
+    --fifth-color: hsl(0, 0%, 5%);
+    --sixth-color: royalblue;
+    --seventh-color: black;
+}
+body.light{
+    --first-color: #e8e9ef;
+    --second-color: #330434;
+    --third-color: hsl(0, 0%, 10%);
+    --fourth-color: hsl(227, 100%, 95%);
+    --fifth-color: hsl(0, 0%, 95%);
+    --sixth-color: orangered;
+    --seventh-color: white;
+}
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    scroll-behavior: smooth;
+}
+body{
+    /* padding-top: 3rem; */
+    /* background-color: var(--seventh-color); */
+    color: var(--seventh-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    /* background-color: var(--seventh-color); */
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    z-index: 10;
+}
+header h1{
+    color: var(--second-color);
+    font-family: "Montserrat";
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    width: 25vw;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--third-color);
+    font-family: "Montserrat";
+    /* transition: all .2s; */
+    font-weight: 500;
+    margin-left: 1rem;
+}
+header ul li a:hover{
+    letter-spacing: 1px;
+    color: white;
+}
+.light header ul li a:hover{
+    color: black;
+}
+section{
+    padding: 8rem;
+}
+#home{
+    height: 100vh;
+    background-color: var(--seventh-color);
+    padding: 8rem;
+    padding-top: 35vh;
+}
+h2{
+    font-size: 3rem;
+}
+strong{
+    font-size: 1.5rem;
+}
+h2, strong{
+    color: var(--second-color);
+    font-family: "Montserrat";
+}
+a.active{
+    letter-spacing: 1px;
+}
+#home p{
+    color: var(--third-color);
+    /* border: 1px solid red; */
+    width: 60%;
+    font-family: "Poppins";
+}
+#home div button{
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    padding: .8rem 1.3rem;
+    /* background: none; */
+    border-radius: 1rem;
+}
+#home .btn-container #btn-1{
+    color: var(--first-color);
+    border: none;
+    background-color: transparent;
+    background: linear-gradient(to bottom right, var(--sixth-color), var(--second-color));
+    box-shadow: 0 0 3rem -1rem var(--third-color);
+    /* transition: all .2s; */
+}
+#home .btn-container #btn-1 a{
+    text-decoration: none;
+}
+#home .btn-container #btn-1:hover{
+    box-shadow: 0 0 4rem -1rem var(--third-color);
+    letter-spacing: 1px;
+}
+#home .btn-container #btn-2{
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    background-color: transparent;
+    transition: all .3s;
+}
+#home .btn-container #btn-2:hover{
+    border: 1px solid var(--sixth-color);
+    color: var(--sixth-color);
+    box-shadow: 0 0 4rem -1rem var(--sixth-color);
+    transform: scale(1.02);
+}
+#home .btn-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#skills{
+    min-height: 100vh;
+    background-color: var(--fifth-color);
+    padding: 4rem;
+    text-align: center;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skill{
+    /* border: 1px solid red; */
+    /* background-color: var(--seventh-color); */
+    border-radius: 1rem;
+    width: 20%;
+    height: 44vh;
+    margin: 1rem;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--first-color);
+}
+.skill:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 3rem 0 var(--first-color);
+}
+.light .skill:hover{
+    box-shadow: 0 0 3rem 0 hsl(0, 0%, 60%);
+}
+.skill h3{
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    color: var(--third-color);
+    transition: all .5s;
+}
+.skill p{
+    font-size: 1rem;
+    font-family: "Poppins";
+    color: var(--third-color);
+    transition: all .5s;
+}
+.skill i{
+    font-size: 5rem;
+    color: var(--second-color);
+    transition: all .5s;
+}
+.skill:hover h3, .skill:hover p{
+    color: black;
+}
+.skill:hover i{
+    color: var(--sixth-color);
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-color);
+    border-radius: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+.skill:hover .icon-container{
+    background-color: var(--sixth-color);
+}
+.icon-container i{
+    font-size: 3rem;
+    color: var(--first-color);
+}
+.skill:hover .icon-container i{
+    color: var(--first-color);
+}
+#services{
+    background-color: var(--first-color);
+    min-height: 100vh;
+    text-align: center;
+}
+.service img{
+    max-width: 50%;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    border-radius: .8rem;
+    box-shadow: -5px 5px 15px var(--seventh-color);
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 5rem;
+}
+.service-info{
+    /* border: 1px solid red; */
+    width: 42%;
+}
+.service-info p{
+    color: var(--third-color);
+    font-family: "Poppins";
+}
+.service-info strong{
+    font-size: 1.2rem;
+    color: var(--sixth-color);
+}
+.title-container{
+    display: flex;
+    align-items: center;
+}
+.service i{
+    color: var(--second-color);
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+.service h3{
+    font-size: 3rem;
+    color: var(--second-color);
+    font-family: "Montserrat";
+}
+footer{
+    background-color: var(--seventh-color);
+    min-height: 40vh;
+    padding: 8rem;
+    box-shadow: 0 0 4rem -1rem var(--sixth-color);
+}
+footer button{
+    word-break: break-all;
+}
+.footer-container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+footer h3{
+    font-size: 1.5rem;
+    color: var(--second-color);
+    font-family: "Montserrat";
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a, footer p::after{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Poppins";
+    color: var(--third-color);
+    transition: all .2s;
+}
+footer ul li a:hover{
+    color: var(--sixth-color);
+    /* filter: drop-shadow(0 0 3rem var(--sixth-color)); */
+    text-shadow: 0 0 .8rem var(--sixth-color);
+    letter-spacing: 1px;
+}
+footer p::after,
+#home p::after{
+    content: "Frontend developer who loves clean design, smooth interactions, and building things that make people smile";
+    animation: about_me 40s infinite;
+}
+@keyframes about_me {
+    0% {content: "Frontend developer who loves clean design, smooth interactions, and building things that make people smile";}
+    20% {content: "Crafting user-friendly web experiences with a focus on performance, accessibility, and a touch of creativity";}
+    40% {content: "I build interfaces that feel good to use — thoughtful, fast, and accessible";}
+    60% {content: "Web developer fueled by coffee, curiosity, and a passion for clean, functional design";}
+    80% {content: "Just a developer trying to make the web a little more beautiful and a lot more usable";}
+    100% {content: "Frontend developer who loves clean design, smooth interactions, and building things that make people smile";}
+}
+.footer-container div{
+    /* border: 1px solid var(--sixth-color); */
+    width: 30%;
+}
+footer ul li button{
+    font-size: 1rem;
+    font-family: "Poppins";
+    color: var(--third-color);
+    background: none;
+    border: 1px solid transparent;
+    padding: .2rem;
+    border-radius: .5rem;
+}
+footer ul li button:hover{
+    color: var(--sixth-color);
+    border-bottom: 1px solid var(--sixth-color);
+    cursor: pointer;
+}
+/* .form-popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 19;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 4rem;
+} */
+form{
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 10vh;
+    bottom: 10vh;
+    height: 80vh;
+    width: 80%;
+    z-index: -1;
+    background-color: var(--seventh-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    opacity: 0;
+}
+.form-popup form input,
+.form-popup form textarea{
+    width: 100%;
+    height: 3rem;
+    border-radius: .7rem;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    font-family: "Montserrat";
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-weight: 500;
+}
+.form-popup form textarea{
+    min-height: 3rem;
+    max-height: 10rem;
+    resize: vertical;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    overflow: hidden;
+    height: 10rem;
+}
+.form-popup .field-container{
+    position: relative;
+    width: 80%;
+    height: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-popup form input:focus{
+    border: none;
+    outline: none;
+}
+.form-popup form input:placeholder-shown + label,
+.form-popup form textarea:placeholder-shown + label{
+    transform: translateY(0);
+    background: none;
+}
+.form-popup form input::placeholder,
+.form-popup form textarea::placeholder{
+    opacity: 0;
+}
+.form-popup form label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: crimson;
+    font-weight: 500;
+    font-size: 1rem;
+    z-index: 21;
+    transform: translateY(-1.7rem);
+    font-family: "Montserrat";
+    padding: 1px 5px;
+    background-color: var(--seventh-color);
+    border-radius: 5px;
+}
+.form-popup form button,
+.pop-up button{
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: crimson;
+    color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -.5rem;
+    top: -.5rem;
+}
+.form-popup form button[type="submit"]{
+    left: 5%;
+    top: 10%;
+    border-radius: 1rem;
+    width: 10%;
+    height: 10%;
+    justify-content: space-around;
+}
+.pop-up{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--seventh-color);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+}
+.pop-up h2{
+    text-align: center;
+}
+#buy-only,
+#monthly-sub{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    top: 10vh;
+    bottom: 10vh;
+    background-color: var(--seventh-color);
+    z-index: 30;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(to bottom right, var(--fourth-color), var(--first-color));
+    box-shadow: 0 0 3rem -2rem var(--sixth-color);
+}
+.pop-up p{
+    color: var(--third-color);
+    font-family: "Poppins";
+}
+.pop-up button{
+    border: none;
+}
+.viewed{
+    opacity: 1;
+    z-index: 22;
+}
+footer input{
+    display: none;
+}
+footer label{
+    display: block;
+    width: 5.2rem;
+    height: 2.9rem;
+    background-color: var(--sixth-color);
+    border-radius: 50rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0;
+    position: relative;
+}
+footer label::before{
+    content: "";
+    background-color: var(--seventh-color);
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: .2rem;
+    right: 2.5rem;
+    top: .2rem;
+    bottom: .2rem;
+    transition: all .3s;
+}
+footer input:checked + label::before{
+    right: .2rem;
+    left: 2.5rem;
+}
+label i{
+    position: absolute;
+    z-index: 20;
+    font-size: 1.5rem;
+    color: var(--sixth-color);
+    top: .7rem;
+    bottom: .7rem;
+}
+.fa-moon{
+    left: .5rem;
+}
+.fa-sun{
+    right: .5rem;
+}
+.switch-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.active-mode{
+    letter-spacing: 2px;
+    text-shadow: 0 0 1rem var(--sixth-color);
+}
+footer ul li i{
+    color: hsl(0, 0%, 90%);
+}
+.light footer ul li i{
+    color: hsl(0, 0%, 10%);
+}
+li{
+    display: block;
+    color: var(--third-color);
+    font-family: "Poppins";
+    font-size: 1rem;
+}
+#hm a{
+    color: var(--first-color);
+    border: none;
+    background-color: transparent;
+    background: linear-gradient(to bottom right, var(--sixth-color), var(--second-color));
+    box-shadow: 0 0 3rem -1rem var(--third-color);
+    font-family: "Poppins";
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 2rem;
+}
+#warning{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 60px;
+    background-color: crimson;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 1rem; */
+    position: fixed;
+    bottom: 10vh;
+    left: 5%;
+}
+#warning strong{
+    color: var(--seventh-color);
+    font-size: 1rem;
+}
+#warning.alert{
+    left: calc(-5% - 300px);
+    opacity: 0;
+}
+#warning.alerted{
+    left: 5%;
+    opacity: 1;
+}
+#home{
+    display: flex;
+}
+/* #home img{
+    transform: scale(2);
+} */
+article{
+    width: 50%;
+}

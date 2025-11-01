@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="mobile.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "EIrlCa6v689akd1hW",
+        });
+    })();
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MARK</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" id="a1">Home</a></li>
+                <li><a href="#skills" id="a2">Skills</a></li>
+                <li><a href="#services" id="a3">Services</a></li>
+                <li><a href="#contact" id="a4">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+
+
+        <section id="home">
+
+            <article>
+                <h2>Hi, I'm Mark Hanna</h2>
+                <br>
+                <strong>Frontend Developer</strong>
+                <br>
+                <br>
+                <p>
+    
+                </p>
+                <br>
+                <div class="btn-container">
+                    <button id="btn-1" onclick="viewPopUp('hm')">Hire me</button>
+                    <button id="btn-2" onclick="ViewAlert('warning')">View work</button>
+                </div>
+    
+                <div class="alert" id="warning">
+                    <i class="fa-solid fa-x"></i>
+                    <strong>I don't have any projects yet!</strong>
+                </div>
+    
+    
+    
+                <div role="dialog" aria-modal="true" class="pop-up" id="hm">
+                    <div id="buy-only">
+                        <button onclick="hidePopUp('hm')"><i class="fa-solid fa-x"></i></button>
+                        <h2>Hire me</h2>
+                        <strong>For now, I only work as a freelancer</strong>
+                        <br><br>
+                        <a href="#contact">Contact me</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- <img src="images/me-removebg-preview.png" alt=""> -->
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <br>
+            <strong>Here's a list of skills I've learned</strong>
+
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Designing</h3>
+                    <i class="fa-solid fa-brush"></i>
+                    <p>suitable designes and color picking for websites attracting all kind of targeted audiences</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Html & Css</h3>
+                    <i class="fa-solid fa-code"></i>
+                    <p>Experienced in creating responsive websites working on all kind of devices</p>
+                </div>
+
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>Adding interactivity to websites using advanced knowledge of JavaScript, making them feel more alive</p>
+                </div>
+                
+                <div class="skill">
+                    <h3>Vibe Coding</h3>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-a"></i>
+                        <i class="fa-solid fa-i"></i>
+                    </div>
+                    <p>UI so smooth, you'd think AI built it (Kinda did)</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <h2>Coming soon</h2>
+            <br>
+            <strong>Learning in progress...</strong>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Php</h3>
+                    <i class="fa-solid fa-server"></i>
+                    <p>Ready to create servers using CORE Php connecting databases to the User Interface</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Sql & MySQL</h3>
+                    <i class="fa-solid fa-database"></i>
+                    <p>creating large databases to contain users' data maintaining a strong fullstack websites</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+        <section id="services">
+
+            <h2>Services</h2>
+            <br>
+            <strong>I can offer you</strong>
+            <br>
+            <br>
+
+            <div class="service-container">
+                <div class="service">
+                    <div class="service-info">
+
+                        <div class="title-container">
+                            <i class="fa-solid fa-computer"></i>
+                            <h3>Responsive UIs</h3>
+                        </div>
+
+                        <br>
+                        <p>Designing for Impact — I craft responsive, high-performance web interfaces that don’t just <strong>scale</strong> to large screens—they shine on them. From ultra-wide desktops to 4K monitors, I ensure that every layout remains elegant, every interaction smooth, and every pixel purposeful. Because great frontend development isn't just about making things work—it's about making them <strong>right</strong> at every resolution.</p>
+                    </div>
+                    <img src="images/1.png" alt="" style="aspect-ratio: 2 / 1;">
+                </div>
+
+                <div class="service" id="service-2">
+
+                    <div class="img-container">
+                        <img src="images/2.jpeg" alt="">
+                        <img src="images/3.jpeg" alt="">
+                        <img src="images/4.jpeg" alt="">
+                    </div>
+
+                    <div class="service-info">
+                        <div class="title-container">
+                            <i class="fa-solid fa-mobile"></i>
+                            <h3>Even on Mobile</h3>
+                        </div>
+                        <br>
+                        <p>Built for <strong>Thumbs</strong>, Designed for Delight — I develop mobile-first interfaces that feel natural, fast, and intuitive on every screen size. From smooth gestures to optimized layouts, I focus on creating experiences that users love in the palm of their hand. Because great mobile design isn't just about fitting in a small screen—it's about <strong>standing out</strong> on it.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="service">
+                    <div class="service-info">
+                        <div class="title-container">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <h3>Editing old Sites</h3>
+                        </div>
+                        <br>
+                        <p>Reviving the Web, One Pixel at a Time — I specialize in transforming outdated websites into modern, responsive, and performance-optimized experiences. Whether it’s refreshing the UI, fixing broken layouts, or rewriting messy code, I breathe new life into legacy sites—making them faster, cleaner, and ready for today’s users.</p>
+                        <br>
+                        <p><strong>Note:</strong> It'll work only if the old website coded by the same languages [Html, Css, JavaScript]</p>
+                    </div>
+                    <img src="images/5.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer id="contact">
+
+
+        <div class="switch-container">
+            <h3 id="dark" class="active-mode">Dark</h3>
+            <input type="checkbox" id="switch">
+            <label for="switch" onclick="switchMode()">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
+            <h3 id="light">Light</h3>
+        </div>
+        <br><br>
+        <br><br>
+
+        <div class="footer-container">
+
+            <div>
+                <h3>Contact me</h3>
+                <br>
+                <ul>
+                    <li title="phone number">       <i class="fa-solid fa-phone"></i>    <a href="">01275682403</a></li>
+                    <li title="whatsapp number">    <i class="fa-brands fa-whatsapp"></i>    <a href="">01275682403</a></li>
+                    <li title="Email">              <i class="fa-regular fa-envelope"></i>    <button onclick="viewEmailForm()">mark0171.business@gmail</button></li>
+                    <li title="Instagram">          <i class="fa-brands fa-instagram"></i>    <a href="https://www.instagram.com/ruka_0171/" target="_blank" rel="noopener noreferrer">ruka_0171</a></li>
+                    <li title="Snapchat">           <i class="fa-brands fa-snapchat"></i>    <a href="https://www.snapchat.com/add/ruka_0171/" target="_blank" rel="noopener noreferrer">ruka_0171</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>About me</h3>
+                <br>
+                <p></p>
+            </div>
+    
+            <div>
+                <h3>Policies</h3>
+                <br>
+                <ul>
+                    <li><button onclick="viewPopUp('bo')">Buy only policy</button></li>
+                    <li><button onclick="viewPopUp('ms')">Monthly subscription</button></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div role="dialog" aria-modal="true" class="form-popup">
+        <form action="" method="post">
+            <button type="button"><i class="fa-solid fa-x"></i></button>
+            <h2>Email me</h2>
+            <br>
+            <br>
+            <div class="field-container">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="name">Name</label>
+            </div>
+            <br>
+            <div class="field-container">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <br>
+            <div class="field-container">
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <label for="subject">Subject</label>
+            </div>
+            <br>
+            <div class="field-container">
+                <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" onclick="sendMail()"><i class="fa-solid fa-paper-plane"></i>Send</button>
+
+        </form>
+
+    </div>
+
+
+    <div role="dialog" aria-modal="true" class="pop-up" id="bo">
+        <div id="buy-only">
+            <button onclick="hidePopUp('bo')"><i class="fa-solid fa-x"></i></button>
+            <h2>Buy only policy</h2>
+            <br>
+            <br>
+            <ul>
+                <li>You agree to <strong>TOTTALY</strong> buy the website and have the rights to edit it the way you want</li>
+                <br>
+                <li>Any modificaton has its price</li>
+                <br>
+                <li><strong>Note: </strong>the website must not be edited in any other languages or frameworks if you want me to edit it</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div role="dialog" aria-modal="true" class="pop-up" id="ms">
+        <div id="monthly-sub">
+            <button onclick="hidePopUp('ms')"><i class="fa-solid fa-x"></i></button>
+            <h2>Monthly subscription</h2>
+            <br>
+            <br>
+            <ul>
+                <li>You will pay me regular monthly-payment that increases regulary by 25% every 3-months</li>
+                <br>
+                <li>You can change or edit or even add some new properties or mechanics to your website.</li>
+                <li>You will have 1-change every 2-weeks, Total of 2-changes/month</li>
+                <br>
+                <li><strong>Note: </strong>Any external edit in the website by someone else, You are ending your monthly-plan.</li>
+                <li>I still can edit it [if it's not edited through different languages or frameworks] but every modificaton will have its own price [as the buy-only policy]</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
