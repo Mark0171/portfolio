@@ -275,7 +275,7 @@
 
 
     <div role="dialog" aria-modal="true" class="form-popup">
-        <form method="post">
+        <form onsubmit="sendMail(event)" method="post">
             <button type="button"><i class="fa-solid fa-x"></i></button>
             <h2>Email me</h2>
             <br>
@@ -299,7 +299,7 @@
                 <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
                 <label for="message">Message</label>
             </div>
-            <button type="submit" onclick="sendMail()"><i class="fa-solid fa-paper-plane"></i>Send</button>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i>Send</button>
 
         </form>
 
@@ -344,5 +344,4 @@
 
 
 </body>
-
 </html>

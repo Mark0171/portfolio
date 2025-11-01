@@ -1,4 +1,6 @@
-function sendMail() {
+function sendMail(e) {
+    e.preventDefault();
+    
     let parms = {
         name : document.getElementById("name").value,
         email : document.getElementById("email").value,
