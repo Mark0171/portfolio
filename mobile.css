@@ -274,3 +274,35 @@ li{
 }
 
 
+
+/* Fix for mobile gesture navigation bars */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .navbar {
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #fff;
+  }
+}
+
+/* Fallback for older browsers */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.main-content {
+  padding-bottom: 80px; /* Space for fixed navbar + safe area */
+}
