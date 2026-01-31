@@ -1,6 +1,9 @@
 -webkit-scrollbar{
     display: none;
 }
+html, body{
+    overflow-x: hidden;
+}
 main{
     max-width: 100vw;
     overflow-x: hidden;
@@ -269,3 +272,4 @@ li{
 #warning{
     width: 90%;
 }
+
