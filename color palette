@@ -1,0 +1,26 @@
+The colors i used
+
+
+for darkmode
+:root{
+    --first-color: #16171d;
+    --second-color: #FFC8FB;
+    --third-color: hsl(0, 0%, 90%);
+    --fourth-color: hsl(227, 100%, 5%);
+    --fifth-color: hsl(0, 0%, 5%);
+    --sixth-color: royalblue;
+    --seventh-color: black;
+}
+
+
+
+for lightmode
+body.light{
+    --first-color: #e8e9ef;
+    --second-color: #330434;
+    --third-color: hsl(0, 0%, 10%);
+    --fourth-color: hsl(227, 100%, 95%);
+    --fifth-color: hsl(0, 0%, 95%);
+    --sixth-color: orangered;
+    --seventh-color: white;
+}
